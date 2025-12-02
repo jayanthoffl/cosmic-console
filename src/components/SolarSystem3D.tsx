@@ -87,14 +87,14 @@ interface SolarSystem3DProps {
 
 const SolarSystem3D = ({ onPlanetClick }: SolarSystem3DProps) => {
   const planets = [
-    { name: "Mercury", radius: 0.15, distance: 4, color: "#8c8c8c", speed: 4.7 },
-    { name: "Venus", radius: 0.3, distance: 5.5, color: "#e6c87e", speed: 3.5 },
-    { name: "Earth", radius: 0.32, distance: 7, color: "#4a90d9", speed: 3 },
-    { name: "Mars", radius: 0.2, distance: 8.5, color: "#d9534f", speed: 2.4 },
-    { name: "Jupiter", radius: 0.8, distance: 12, color: "#d4a574", speed: 1.3 },
-    { name: "Saturn", radius: 0.7, distance: 15, color: "#f4d59e", speed: 0.9 },
-    { name: "Uranus", radius: 0.45, distance: 18, color: "#7fdbda", speed: 0.6 },
-    { name: "Neptune", radius: 0.43, distance: 21, color: "#4169e1", speed: 0.5 },
+    { name: "Mercury", radius: 0.15, distance: 4, color: "#8c8c8c", speed: 0.8 },
+    { name: "Venus", radius: 0.3, distance: 5.5, color: "#e6c87e", speed: 0.6 },
+    { name: "Earth", radius: 0.32, distance: 7, color: "#4a90d9", speed: 0.5 },
+    { name: "Mars", radius: 0.2, distance: 8.5, color: "#d9534f", speed: 0.4 },
+    { name: "Jupiter", radius: 0.8, distance: 12, color: "#d4a574", speed: 0.25 },
+    { name: "Saturn", radius: 0.7, distance: 15, color: "#f4d59e", speed: 0.18 },
+    { name: "Uranus", radius: 0.45, distance: 18, color: "#7fdbda", speed: 0.12 },
+    { name: "Neptune", radius: 0.43, distance: 21, color: "#4169e1", speed: 0.1 },
   ];
 
   return (
