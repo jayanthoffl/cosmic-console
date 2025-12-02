@@ -43,20 +43,23 @@ const About = () => {
 
         {/* Boot Log */}
         <div className="terminal-border p-4 mb-6 font-mono text-sm">
-          {logs.map((log, i) => (
-            <div
-              key={i}
-              className={`${
-                log.includes("[OK]")
-                  ? "text-terminal-green"
-                  : log.includes("[INFO]")
-                  ? "text-terminal-cyan"
-                  : "text-muted-foreground"
-              }`}
-            >
-              {log}
-            </div>
-          ))}
+          {logs.map((log, i) => {
+            if (!log) return null;
+            return (
+              <div
+                key={i}
+                className={`${
+                  log.includes("[OK]")
+                    ? "text-terminal-green"
+                    : log.includes("[INFO]")
+                    ? "text-terminal-cyan"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {log}
+              </div>
+            );
+          })}
           {logs.length === 8 && (
             <div className="text-primary terminal-glow mt-2 animate-pulse">
               █ System operational
