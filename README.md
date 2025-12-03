@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# 🚀 Solar System Explorer v2.4.1
 
-## Project info
+An interactive **3D planetary database and mission control terminal** built with a modern frontend stack.  
+Visualize the solar system in 3D, explore detailed planetary data enriched with live API sources, and manage space exploration missions with full **CRUD operations** stored locally in the browser.
 
-**URL**: https://lovable.dev/projects/e9756b48-7e7a-4272-afd7-4e3f345ef298
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+### 🪐 Planetary Database
+- Comprehensive data for all 8 planets
+- Dynamic detail pages enriched with **NASA Solar System API**
+- Atmospheric, orbital, and physical statistics
+- Interactive UI with animated visualizations & fun facts
 
-**Use Lovable**
+### 🛰 Mission Control Center
+- Full CRUD: Create, view, edit, and delete missions
+- Real-time updates stored locally using **localStorage**
+- Async operations with simulated network delay
+- Toast notifications & error handling
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e9756b48-7e7a-4272-afd7-4e3f345ef298) and start prompting.
+### 🌌 3D Solar System Visualization
+- Built using **React Three Fiber** + **Three.js**
+- Clickable planets & animated camera controls
+- Real-time rendering using WebGL
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🧠 Type-safe & Modern Development
+- Fully typed with **TypeScript**
+- Lightning-fast builds via **Vite**
+- **Tailwind CSS** terminal-style UI theme
+- Client-side routing via **React Router**
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🏗 Tech Stack Overview
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Technology | Purpose |
+|-----------|---------|
+| **React 18** | UI library & component rendering |
+| **TypeScript** | Type-safe JavaScript |
+| **Vite** | Development server & bundler |
+| **Tailwind CSS** | Utility-first styling |
+| **React Three Fiber** | React renderer for Three.js 3D graphics |
+| **React Router DOM** | Client-side routing |
+| **Axios** | HTTP client for API calls |
+| **localStorage** | Mission data persistence |
+| **Sonner** | Toast notifications |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Project Structure
+├── components/ # UI components & 3D scenes
+├── pages/ # Page-level views
+├── services/ # API & localStorage logic
+├── data/ # Static fallback planetary data
+├── assets/ # Media / icons
+├── App.tsx # App shell, routing config
+└── main.tsx # Application entry file
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🔧 Key Files Explained
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### `src/App.tsx`
+Handles app-wide providers and routing:
+- BrowserRouter for navigation
+- Setup for tooltips, queries, and toasts
+- Defines URL → Component mapping
+
+### `src/services/missionService.ts`
+Acts as a **virtual JSON server** using `localStorage`:
+- `getAllMissions`, `createMission`, `updateMission`, `deleteMission`
+- Simulates latency with async `delay()` function
+- No backend required—data persists locally
+
+### `src/services/planetApi.ts`
+Fetches real planetary stats:
+- Calls external Solar System API
+- Gracefully falls back to local data if request fails
+
+### `src/components/SolarSystem3D.tsx`
+Full WebGL 3D experience:
+- `Canvas`, `mesh`, `OrbitControls`
+- `useFrame()` for animation loops
+- Click handlers for Planet Detail navigation
+
+---
+
+## 🧪 Mission CRUD Workflow
+
+```mermaid
+flowchart LR
+A[User Action] --> B[Component State]
+B --> C[Service Function]
+C --> D[localStorage]
+D --> B
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+git clone https://github.com/your-username/solar-system-explorer.git
+cd solar-system-explorer
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e9756b48-7e7a-4272-afd7-4e3f345ef298) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
