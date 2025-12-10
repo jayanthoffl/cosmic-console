@@ -59,8 +59,9 @@ Visualize the solar system in 3D, explore detailed planetary data enriched with 
 | **Sonner** | Toast notifications |
 
 ---
-```
+
 ## 📁 Project Structure
+```
 📦 src/
 ├── components/     # UI components & 3D scene components
 ├── pages/          # Page-level views / route screens
