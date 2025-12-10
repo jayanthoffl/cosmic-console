@@ -7,10 +7,13 @@ Visualize the solar system in 3D, explore detailed planetary data enriched with 
 
 ## Video Presentation ( Working Demo )
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cbf03b57-9853-424e-a0bf-f781b2e5893c" />
-[Recorded Video Explanantion of Project](https://drive.google.com/file/d/1yLAjUAzZgCemoqqL3fsVK3Knp4Ei8lJu/view?usp=sharing)
-[Recorded CODE Explanantion of Project](https://drive.google.com/file/d/14cQU8qA7vU5VbuUvlnMkPfo1MfBVEHeI/view?usp=sharing)
 
-[Project Report( Click Here )](https://drive.google.com/file/d/1aW-B_Ziv4AZ4o-ntnMeDXzUlaw1JfsEe/view?usp=sharing)
+### 🎥 Project Videos  
+- [Recorded Video Explanation of Project](https://drive.google.com/file/d/1yLAjUAzZgCemoqqL3fsVK3Knp4Ei8lJu/view?usp=sharing)
+- [Recorded Code Explanation of Project](https://drive.google.com/file/d/14cQU8qA7vU5VbuUvlnMkPfo1MfBVEHeI/view?usp=sharing)
+
+### 📄 Project Report  
+- [Project Report (Click Here)](https://drive.google.com/file/d/1aW-B_Ziv4AZ4o-ntnMeDXzUlaw1JfsEe/view?usp=sharing)
 
 ---
 
