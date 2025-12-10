@@ -61,13 +61,14 @@ Visualize the solar system in 3D, explore detailed planetary data enriched with 
 ---
 
 ## 📁 Project Structure
-├── components/ # UI components & 3D scenes
-├── pages/ # Page-level views
-├── services/ # API & localStorage logic
-├── data/ # Static fallback planetary data
-├── assets/ # Media / icons
-├── App.tsx # App shell, routing config
-└── main.tsx # Application entry file
+📦 src/
+├── components/     # UI components & 3D scene components
+├── pages/          # Page-level views / route screens
+├── services/       # API calls, data fetching, localStorage utilities
+├── data/           # Static fallback planetary data (JSON / TS files)
+├── assets/         # Media, icons, textures, models
+├── App.tsx         # App shell, routing configuration
+└── main.tsx        # Application entry file
 
 ---
 
