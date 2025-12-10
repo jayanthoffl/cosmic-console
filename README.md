@@ -59,7 +59,7 @@ Visualize the solar system in 3D, explore detailed planetary data enriched with 
 | **Sonner** | Toast notifications |
 
 ---
-
+```
 ## 📁 Project Structure
 📦 src/
 ├── components/     # UI components & 3D scene components
@@ -69,6 +69,7 @@ Visualize the solar system in 3D, explore detailed planetary data enriched with 
 ├── assets/         # Media, icons, textures, models
 ├── App.tsx         # App shell, routing configuration
 └── main.tsx        # Application entry file
+```
 
 ---
 
